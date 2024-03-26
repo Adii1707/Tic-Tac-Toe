@@ -2,16 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -24,15 +15,72 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+#box{
+  margin:auto;
+  display: grid;
+  padding: 3px;
+  width: 20%;
+  height: 260px;
+  /* margin: auto; */
+  grid-template-rows: repeat(1);
+  grid-template-columns: repeat(3, 1fr);
+  /* justify-content: center; */
+  align-items: center;
+  background-color: lightcyan;
+  border-radius: 8px;
+  /* gap: 2px; */
+  /* border: 2px solid white; */
+  box-shadow: rgba(255, 255, 255, 0.356) 0px 10px 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subbox{
+  margin: auto;
+  width: 90%;
+  height: 80px;
+  border: 3px  solid rgb(19, 17, 17);
+  border-radius: 5px;
+  box-shadow: rgb(204, 86, 86) 0px 1px 10px;
+  text-align: center;
+  color: black;
+  text-transform: capitalize;
+  position: relative;
+  font-weight: 600;
+  font-size: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  
+  
+}
+
+.btnbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  margin: auto;
+  /* background-color: yellow; */
+  margin-top: -90px;
+
+}
+
+.btnbox button{
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  box-shadow: rgb(204, 86, 86) 0px 1px 10px;
+  background: #292424dd;
+  margin: auto;
+  
+
+}
+
+.btnbox h3{
+  
+  color: rgb(70, 236, 70);
 }
